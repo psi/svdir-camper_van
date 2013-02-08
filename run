@@ -1,0 +1,5 @@
+#!/bin/sh
+eval "$(rbenv init -)"
+
+exec 2>&1
+exec camper_van 0.0.0.0
