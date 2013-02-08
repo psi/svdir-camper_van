@@ -1,5 +1,8 @@
 #!/bin/sh
+BIND_ADDR="0.0.0.0"
+BIND_PORT="6667"
+
 eval "$(rbenv init -)"
 
 exec 2>&1
-exec camper_van 0.0.0.0
+exec camper_van ${BIND_ADDR} ${BIND_PORT}
